@@ -1,15 +1,24 @@
-import os
+import numpy as np
+import matplotlib.pyplot as plt
 
-from flask import Flask, send_file
+img = plt.imread('for_demosaic.png')
 
-app = Flask(__name__)
+# chech the original filter
+# sub_00 = img[0::2,0::2]
+# sub_01 = img[0::2,1::2]
+# sub_10 = img[1::2,0::2]
+# sub_11 = img[1::2,1::2]
 
-@app.route("/")
-def index():
-    return send_file('src/index.html')
+# subs = [sub_00, sub_01, sub_10, sub_11]
 
-def main():
-    app.run(port=int(os.environ.get('PORT', 80)))
+# # plot subplots for these 4 plots
+# fig, ax = plt.subplots(2,2)
+# for i in range(2):
+#     for j in range(2):
+#         ax[i,j].imshow(subs[i*2+j], cmap='gray')
+# # save plots as png
+# plt.savefig('original_filters.png')
+# # show plots
+# plt.show()
 
-if __name__ == "__main__":
-    main()
+# by the result of png, we know that the filter is: [[G R] [B G]]
