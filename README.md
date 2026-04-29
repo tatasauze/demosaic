@@ -1,7 +1,5 @@
-# Flask Web App Starter
+### interpolation for G
+Hamilton Admas to interpolate G
 
-A Flask starter template as per [these docs](https://flask.palletsprojects.com/en/3.0.x/quickstart/#a-minimal-application).
-
-## Getting Started
-
-Previews should run automatically when starting a workspace.
+### interpolation for B,R
+色差的方式去插值B,R
