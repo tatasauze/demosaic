@@ -1,6 +1,6 @@
-![original img]('for_demosaic.png')
+![original img](for_demosaic.png)
 
-![reconstructed img]('color_img.png')
+![reconstructed img](color_img.png)
 
 ## 重建方式：
 
