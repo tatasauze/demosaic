@@ -130,7 +130,5 @@ if img.max()<=1.0:
 color_img = np.clip(color_img,0,255)
 color_img = color_img.astype(np.uint8)
 
-# plot
-fig = plt.figure(figsize=(10,10))
-plt.imshow(color_img)
-plt.savefig('color_img.png')
+# save the final image
+plt.imsave('color_img.png', color_img)
